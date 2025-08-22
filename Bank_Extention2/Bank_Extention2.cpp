@@ -1275,7 +1275,7 @@ void LogInMenu()
     cout << "______________________________________________________________________________\n";
     cout << " Plz Enter User Name  :" << endl;
     string username, Password;
-    getline(cin, username);
+    getline(cin >>ws , username);
     cout << " Plz Enter  Password  :" << endl;
     getline(cin >> ws, Password);
     while (LogIn(username, Password) == false)
